@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  estimation:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python: ['3.10']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install navigation package and factor graph
+        run: python -m pip install '.[dev,factor-graph]'
+      - name: Tests without optional simulator
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: python -m pytest -q -m 'not simulator'
+      - name: Build distribution
+        run: python -m build
+      - name: Exercise installed wheel outside checkout
+        run: |
+          python -m pip install --force-reinstall --no-deps dist/*.whl
+          cd /tmp
+          auv-nav config
+          auv-nav demo --seconds 2 --seeds 1 --estimators ekf,ekf_walls,fgo --output /tmp/nav-wheel-demo

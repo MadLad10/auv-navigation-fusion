@@ -1,0 +1,13 @@
+{
+  "kind": "Animation of recorded kinematic sensor replay; not a physics simulation video",
+  "gif_frames": 41,
+  "gif_size": [
+    900,
+    360
+  ],
+  "files": {
+    "trajectory.png": "9394cdd9a87b0830dfea310d67ac60cc60f22668c8304c1b12775a56d5010c35",
+    "trajectory.svg": "d8b0eef064dfec585a06151877e8656085331adcf5847b7d078f15548428a719",
+    "dvl_dropout.gif": "d2932091be39f00586cd81762cc8416b1e297400df46295e086d3317ec34a9a2"
+  }
+}

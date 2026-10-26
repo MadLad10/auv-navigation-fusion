@@ -1,0 +1,83 @@
+{
+  "valid": true,
+  "verified_at": "2026-10-27T01:32:20.856207+06:00",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "linux",
+  "versions": {
+    "auv-navigation-fusion": "0.1.0",
+    "numpy": "1.26.4",
+    "PyYAML": "6.0.3",
+    "gtsam": "4.2",
+    "pytest": "8.4.2",
+    "mujoco-marine-sim": "0.1.0",
+    "mujoco": "3.17.0",
+    "matplotlib": "3.10.9",
+    "Pillow": "12.3.0"
+  },
+  "clean_source_install_tests": {
+    "passed": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 2.647,
+    "junit_sha256": "001f580cdf1db59bd7b829af4f65312a78e1d5380c62d9b1f54e623741514e5f"
+  },
+  "isolated_release_wheel_tests": {
+    "passed": 30,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 6.147,
+    "junit_sha256": "2ad42b025281391b170ed35a89f3d1e57bba5212c796e9ac9982242f0ca13497"
+  },
+  "runtime_import": "/tmp/auv_nav_extract_20261027/wheel-venv/lib/python3.10/site-packages/auv_navigation_fusion/__init__.py",
+  "packaged_config_path": "/tmp/auv_nav_extract_20261027/wheel-venv/lib/python3.10/site-packages/auv_navigation_fusion/config/navigation.yaml",
+  "packaged_model_path": "/tmp/auv_nav_extract_20261027/wheel-venv/lib/python3.10/site-packages/auv_navigation_fusion/models/dvl_net.npz",
+  "packages_absent_from_test_environment": {
+    "rclpy": true,
+    "ament_index_python": true,
+    "auv_agents": true,
+    "auv_onboard": true,
+    "auv_mission_planner": true,
+    "torch": true
+  },
+  "wheel": {
+    "path": "dist/auv_navigation_fusion-0.1.0-py3-none-any.whl",
+    "sha256": "f720962203eda93f2765fcce2fab1a7d9c1966a341c501e16a08d08b5c61f73b"
+  },
+  "source_distribution": {
+    "path": "dist/auv_navigation_fusion-0.1.0.tar.gz",
+    "sha256": "7b81e2d0be30972b8a876c9a3d281545143bb7bb2856233840c7ff2746750248"
+  },
+  "wheel_rebuilt_from_sdist_payload_matches": true,
+  "source_and_tested_install_payload_match_release": true,
+  "cli_replay_metrics": {
+    "samples": 801,
+    "truth_samples": 801,
+    "alignment": "none; known initial pose supplied by caller",
+    "rmse_xy_m": 0.02980058204561848,
+    "max_xy_m": 0.08641048310910286,
+    "final_xy_m": 0.03747342038483561,
+    "rmse_depth_m": 0.0033487205084147685,
+    "rmse_yaw_deg": 0.14877528548777835
+  },
+  "fresh_kinematic_replay_runs": 18,
+  "fresh_replay_seeds": 3,
+  "fresh_replay_seconds": 40,
+  "animation_frames": 41,
+  "imported_historical_run_counts": {
+    "nav_study_fusion": 400,
+    "nav_study_current": 120,
+    "nav_study_20seeds": 320
+  },
+  "original_component_files_unchanged": true,
+  "original_application_runtime_unchanged": true,
+  "git_initialized": false,
+  "ci": {
+    "configured": true,
+    "remote_execution_verified": false,
+    "python": [
+      "3.10"
+    ]
+  }
+}

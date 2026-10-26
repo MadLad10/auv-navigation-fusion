@@ -1,0 +1,76 @@
+{
+  "package_version": "0.1.0",
+  "kind": "kinematic sensor replay; no rigid-body simulation or mission controller",
+  "duration_s": 40.0,
+  "dropout_at_s": 10.0,
+  "initial_position_m": [
+    12.0,
+    5.5,
+    -1.5
+  ],
+  "initial_yaw_rad": 0.4,
+  "wall_map": [
+    -5.0,
+    25.0,
+    -10.0,
+    10.0
+  ],
+  "sonar_offset": [
+    0.2,
+    0.0,
+    -0.08
+  ],
+  "alignment": "none",
+  "rows": [
+    {
+      "condition": "nominal",
+      "estimator": "ekf",
+      "seeds": 3,
+      "mean_rmse_xy_m": 0.05475163019426871,
+      "population_sd_rmse_xy_m": 0.022133024566278112
+    },
+    {
+      "condition": "nominal",
+      "estimator": "ekf_walls",
+      "seeds": 3,
+      "mean_rmse_xy_m": 0.012925003455040733,
+      "population_sd_rmse_xy_m": 0.0012881984055685223
+    },
+    {
+      "condition": "nominal",
+      "estimator": "fgo",
+      "seeds": 3,
+      "mean_rmse_xy_m": 0.06565029324822814,
+      "population_sd_rmse_xy_m": 0.024001670644552633
+    },
+    {
+      "condition": "dvl_dropout",
+      "estimator": "ekf",
+      "seeds": 3,
+      "mean_rmse_xy_m": 2.0670897231610645,
+      "population_sd_rmse_xy_m": 0.17996636488438547
+    },
+    {
+      "condition": "dvl_dropout",
+      "estimator": "ekf_walls",
+      "seeds": 3,
+      "mean_rmse_xy_m": 0.02701798802765615,
+      "population_sd_rmse_xy_m": 0.001981236703309681
+    },
+    {
+      "condition": "dvl_dropout",
+      "estimator": "fgo",
+      "seeds": 3,
+      "mean_rmse_xy_m": 2.0380456946213648,
+      "population_sd_rmse_xy_m": 0.13706916960032944
+    }
+  ],
+  "trace_sha256": {
+    "dvl_dropout_seed0.jsonl": "ceefb165515df9af6246454daf4c0357a9ee5575f1e2cf447eaa2b2f0eca1d72",
+    "dvl_dropout_seed1.jsonl": "e3e30c0564430936f56a8dface42103f02c468c5095a7816dcada1b138015d60",
+    "dvl_dropout_seed2.jsonl": "16ded644a26d7fb7ada2fdc724d1e3e3def8df021af4004d33307642fbf9b136",
+    "nominal_seed0.jsonl": "a35ca1723fe7636be129b928e2fdf3451ec908608248b4f4b92f5ee9a9cdcfcf",
+    "nominal_seed1.jsonl": "b1dc8c0207c840d90233047a9a9bd1f713a904221027f3c814203410b4e1f278",
+    "nominal_seed2.jsonl": "fec7ad57acd59e6b08f049781f02c4e0a5bc5b6b3cef84b9d6a7138799d87e70"
+  }
+}

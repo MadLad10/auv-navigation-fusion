@@ -1,0 +1,24 @@
+{
+  "source_repository": "https://github.com/MadLad10/Agentic-AUV-multimodal-multi-agent-autonomy-for-an-underwater-robot",
+  "extraction_revision": "fcc11c135211b3240d7123cf62507e2bb2bc6877",
+  "original_file_sha256": {
+    "src/auv_onboard/auv_onboard/ekf.py": "ad4e8a981cc86f39d606fd6cc9f0140f142e3cb7586506badc14322a0dd981d5",
+    "src/auv_onboard/auv_onboard/fgo.py": "8d06ece1d7d7546817df767ec841bc3060a0021ea17ccab8caeb0abdad2910cc",
+    "src/auv_onboard/auv_onboard/sonar_mapmatch.py": "7fd30adc10541913296917acad6fad8845cbf97a9e8344fa924fefe45d0701a6",
+    "src/auv_onboard/auv_onboard/learned_velocity.py": "6b3ebc98e8308d7a80071f8cb447162b1eec815cb38966c7b7506ed2410f04e7",
+    "data/models/dvl_net.npz": "32dd1facce2950dad00fa6290b6bb76ef8ae336d69399c044c4afca6a1120720",
+    "data/models/dvl_net_eval.json": "1a9234a61a27ae03dcb4f7ae3eb8eaa9c666739bfee7042c72eb73174bc874f7",
+    "src/auv_onboard/config/onboard.yaml": "4ad1e8b898f4b3f79fa1b6b9c8cb87c8ddbfd834bec9cf7d12bc7c2643e6655c",
+    "eval/results/nav_study_fusion/runs.json": "5535085e59e14b2734d90ef8e635caa8b8c428c6eec73e2f461b95ff31fc4e7d",
+    "eval/results/nav_study_fusion/runs.csv": "cc4546a5e5e7b0c047b93070e8efe9552620777c8861b53f6700dd32d2ef0f92",
+    "eval/results/nav_study_fusion/summary.md": "f830ed49ed90b206d874c41383b1bbf15cf9d40712459de50f13ec1793178da1",
+    "eval/results/nav_study_current/runs.json": "e0be9a60bc66d5aa8b54a9ccc3ac9e140f4cba594f04a4bfb5f6e0a2572c05e6",
+    "eval/results/nav_study_current/runs.csv": "50e2ce7b7948e94ce32ff68e138cb25c18ba0a5239e204a2bfa55697c8568793",
+    "eval/results/nav_study_current/summary.md": "97b8dbe50fd51143e6d4850e2a17b5e3b996d00173c6da09585eb7046eb579c1",
+    "eval/results/nav_study_20seeds/runs.json": "f27a730cfde53437fbf4cf488090207304bbfcd5ac829a87412fa12257778f95",
+    "eval/results/nav_study_20seeds/runs.csv": "3f2724fb76b15a7a4c2fb1c854275afb0a4251fb4c3facf50515a3d3fa9c65fc",
+    "eval/results/nav_study_20seeds/summary.md": "8b141ad2668175fd17a83301d86f1bbb77416d3f336ac98f9bbf13de547ece37",
+    "scripts/train_dvl_net.py": "9fa234f3de743316a459b8de17d0f78fd3f88098d135b7c82b2a7d0db064dacc"
+  },
+  "historical_experiment_revision": "Not recorded in the imported historical files; extraction revision is not their experiment revision"
+}

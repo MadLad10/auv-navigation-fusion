@@ -1,0 +1,9 @@
+include LICENSE README.md
+recursive-include src/auv_navigation_fusion/config *.yaml
+recursive-include src/auv_navigation_fusion/models *.npz *.json
+recursive-include examples *.py
+recursive-include training *.py
+recursive-include tests *.py *.npz
+recursive-include docs *.md *.json *.csv *.svg *.png *.gif
+exclude docs/verification.json
+exclude docs/release_manifest.json

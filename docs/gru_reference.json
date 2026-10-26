@@ -1,0 +1,11 @@
+{
+  "generator": "PyTorch GRU and Linear with bundled weights; normalized input from numpy.default_rng(19).normal(0,0.5,(40,15)) cast float32",
+  "torch_version": "2.12.0+cu130",
+  "numpy_version": "1.26.4",
+  "weights_sha256": "32dd1facce2950dad00fa6290b6bb76ef8ae336d69399c044c4afca6a1120720",
+  "expected_prediction_mps": [
+    0.27961117029190063,
+    -0.00840434804558754,
+    -0.011088766157627106
+  ]
+}

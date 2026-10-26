@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auv-navigation-fusion"
+version = "0.1.0"
+description = "Underwater state estimation from IMU, DVL, depth, compass and mapped sonar measurements."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Yaad Kamrul Bari", email = "yaadbari21@gmail.com"}]
+dependencies = ["numpy>=1.24,<2", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+factor-graph = ["gtsam==4.2"]
+plot = ["matplotlib>=3.7,<4", "Pillow>=10,<13"]
+dev = ["pytest>=7.4,<9", "build>=1.2", "wheel"]
+
+[project.scripts]
+auv-nav = "auv_navigation_fusion.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+auv_navigation_fusion = ["config/*.yaml", "models/*.npz", "models/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["simulator: optional standalone simulator dependency", "factor_graph: optional GTSAM dependency"]

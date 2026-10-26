@@ -1,0 +1,37 @@
+# Standalone defaults: sensor-only EKF; known-map and learned updates are opt-in.
+estimator: ekf
+fgo:
+  keyframe_dt: 0.25
+  imu_dt: 0.05
+  accel_noise: 0.03
+  gyro_noise: 0.002
+  accel_bias_walk: 0.001
+initial_std:
+  pos: 0.1
+  vel: 0.05
+  yaw_deg: 2.0
+  gyro_bias: 0.002
+process_noise:
+  accel: 0.08
+  gyro: 0.004
+  gyro_bias_walk: 0.0001
+meas_noise:
+  dvl_vel: 0.02
+  depth: 0.01
+  compass_deg: 2.0
+sonar_walls:
+  enabled: false
+  beam_stride: 4
+  range_std_m: 0.15
+  gate_m: 0.8
+  max_incidence_deg: 60.0
+learned_velocity:
+  enabled: false
+  weights: null
+  rate_hz: 2.0
+  std_inflation: 1.5
+  std_floor_mps: 0.0
+  current_estimation: true
+  current_tau_s: 15.0
+  dvl_max_age_s: 0.3
+  sample_dt_s: 0.05
